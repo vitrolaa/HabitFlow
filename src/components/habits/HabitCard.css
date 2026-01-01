@@ -1,0 +1,152 @@
+.habit-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    animation: fadeIn 0.3s ease-out;
+}
+
+.habit-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+.habit-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-lg);
+    flex-shrink: 0;
+}
+
+.habit-card-actions {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.habit-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--color-text-tertiary);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.habit-action-btn:hover {
+    background: var(--color-surface);
+    color: var(--color-text-primary);
+}
+
+.habit-action-delete.habit-action-confirm {
+    background: var(--color-danger);
+    color: white;
+}
+
+.habit-action-delete.habit-action-confirm:hover {
+    background: var(--color-danger-hover);
+}
+
+.habit-card-content {
+    flex: 1;
+}
+
+.habit-card-title {
+    margin: 0 0 var(--spacing-xs) 0;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+}
+
+.habit-card-description {
+    margin: 0 0 var(--spacing-sm) 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.habit-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.habit-meta-item {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
+}
+
+.habit-card-stats {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-sm) 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.habit-stat {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.habit-stat-label {
+    color: var(--color-text-tertiary);
+}
+
+.habit-stat-value {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+}
+
+.habit-card-footer {
+    display: flex;
+}
+
+.habit-complete-btn {
+    transition: all var(--transition-base);
+}
+
+.habit-complete-btn:active {
+    transform: scale(0.98);
+}
+
+.habit-progress-container {
+    margin-top: var(--spacing-md);
+}
+
+.habit-progress-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+    margin-bottom: var(--spacing-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: var(--font-weight-semibold);
+}
+
+.habit-progress-bar-bg {
+    width: 100%;
+    height: 6px;
+    background: var(--color-surface);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.habit-progress-bar-fill {
+    height: 100%;
+    border-radius: var(--radius-full);
+    transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

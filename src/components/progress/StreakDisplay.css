@@ -1,0 +1,111 @@
+.streak-card {
+    padding: var(--spacing-xl);
+}
+
+.streak-card.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-2xl);
+    text-align: center;
+    color: var(--color-text-tertiary);
+}
+
+.streak-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.streak-header h3 {
+    margin: 0;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+}
+
+.streak-stats {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+.streak-stat {
+    flex: 1;
+    text-align: center;
+}
+
+.streak-stat-value {
+    font-size: var(--font-size-4xl);
+    font-weight: var(--font-weight-extrabold);
+    color: var(--color-warning);
+    line-height: 1;
+    margin-bottom: var(--spacing-sm);
+}
+
+.streak-stat-value.best {
+    color: var(--color-primary);
+}
+
+.streak-stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.streak-divider {
+    width: 1px;
+    height: 60px;
+    background: var(--color-border);
+}
+
+.streak-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.streak-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--color-surface);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-base);
+}
+
+.streak-item:hover {
+    background: var(--color-surface-hover);
+    transform: translateX(4px);
+}
+
+.streak-rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+}
+
+.streak-item-info {
+    flex: 1;
+}
+
+.streak-item-name {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-primary);
+    margin-bottom: 2px;
+}
+
+.streak-item-value {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
